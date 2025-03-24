@@ -73,6 +73,6 @@ def multiples_of_3_and_5(n):
 
 ### Complexity Analysis
 
-The time complexity for this solution is O(N), where N is the given number. We iterate over all the numbers below the given number to find the sum of multiples of 3 or 5.
+The time complexity for this solution is O(1), where N is the given number. We not iterate over all the numbers below the given number to find the sum of multiples of 3 or 5. Using Sum of arithmetic progression to solve without iterate each number.
 
 The space complexity for this solution is O(1), as we only use a constant amount of extra space to store the sum.
