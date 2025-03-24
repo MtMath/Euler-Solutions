@@ -5,7 +5,6 @@
 ### Problem Statement
 
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 ### Problem Analysis
@@ -29,6 +28,7 @@ I use brute force to iterate over all the numbers below the given number and che
 This approach is simple and straightforward, but it may not be efficient for large numbers.
 
 ```python
+## Imperative Approach
 def multiples_of_3_and_5(n):
     sum = 0
     for i in range(n):
@@ -36,6 +36,9 @@ def multiples_of_3_and_5(n):
             sum += i
     return sum
 
+## Inline Approach
+def multiples_of_3_and_5(n):
+    return sum(for x in range(n) if x % 3 == 0 or x % 5 == 0)
 ```
 
 > Terminated due to timeout :(
@@ -73,6 +76,6 @@ def multiples_of_3_and_5(n):
 
 ### Complexity Analysis
 
-The time complexity for this solution is O(1), where N is the given number. We not iterate over all the numbers below the given number to find the sum of multiples of 3 or 5. Using Sum of arithmetic progression to solve without iterate each number.
+The time complexity for this solution is O(1). We not iterate over all the numbers below the given number to find the sum of multiples of 3 or 5. Using Sum of arithmetic progression to solve without iterate each number.
 
 The space complexity for this solution is O(1), as we only use a constant amount of extra space to store the sum.
